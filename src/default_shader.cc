@@ -31,6 +31,11 @@ namespace mingfx {
         update_light_arrays();
     }
     
+    void DefaultShader::RemoveLight(int i) {
+        lights_.erase(lights_.begin() + i);
+        update_light_arrays();
+    }
+    
     void DefaultShader::update_light_arrays() {
         DefaultShader::LightProperties defaultlight;
         
@@ -144,4 +149,3 @@ namespace mingfx {
     
     
 } // end namespace
-

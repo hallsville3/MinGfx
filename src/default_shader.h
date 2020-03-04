@@ -111,6 +111,9 @@ public:
     /// Up to MAX_LIGHTS can be added.
     void AddLight(LightProperties light);
     
+    /// Removes a light that was already added.
+    void DefaultShader::RemoveLight(int i)
+    
     /// Changes the properties for a light that was already added.
     void SetLight(int i, LightProperties light);
 
